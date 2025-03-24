@@ -1,0 +1,53 @@
+body {
+    background-image: url('assets/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.card {
+    margin: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(39, 180, 11, 0.5);
+    z-index: 10;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+#homeworlds-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+/* Filtreleme kutucuklarının yazı rengini beyaz yap */
+.form-check-label {
+    color: white;
+    font-weight: bold;
+}
